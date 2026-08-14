@@ -1,0 +1,55 @@
+#i am learning python from scratch
+"""
+i am practicing the bacis i have learnt.
+comments, variable, knowing the data type of a variable
+"""
+
+x = "zero"
+y = 3
+print("X is", type(x))
+
+x = "Awesome"
+def myFun():
+    print("python is", x)
+
+myFun()
+
+
+#practising the looping through a string
+for x in "Angela":
+    print(x)
+
+#finding the length of a string
+a = "Hello, welcome!"
+print(len(a))
+print(a[2])
+
+#checking if a character is present in a string
+content = "Life is beginning to look good"
+print("to" in content)
+
+#apply if condition
+content = "Life is beginning to look good"
+if "look" in content:
+ print("Yes, 'look' is present.") 
+
+#apply else
+content = "Life is beginning to look good"
+if "enter" in content:
+ print("Yes, 'look' is present.") 
+else:
+   print("No, sorry it cannot be found")
+
+#day 2: Modifying strings
+x = "olufenmi"
+print(x.upper())
+
+print("Name")
+Name = str(input())
+print(Name.upper())
+
+print("Phone Number") 
+phone_Number = (input())
+if len(phone_Number) != 10:
+   print("sorry the number is incorrect")
+
