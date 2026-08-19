@@ -2,7 +2,7 @@
 """
 i am practicing the bacis i have learnt.
 comments, variable, knowing the data type of a variable
-"""
+
 
 x = "zero"
 y = 3
@@ -44,12 +44,58 @@ else:
 x = "olufenmi"
 print(x.upper())
 
-print("Name")
-Name = str(input())
-print(Name.upper())
+print("First Name")
+first_Name = str(input())
+print("Surname")
+surname = str(input())
+print("age")
+age = input()
+
+full_Name = first_Name + " " + surname
+
+print(full_Name.upper())
+
 
 print("Phone Number") 
-phone_Number = (input())
+phone_Number = input()
 if len(phone_Number) != 10:
-   print("sorry the number is incorrect")
+   print("sorry the number is incorrect, kindly enter the correct number('hint:it must be 10 numbers starting with zero')")
+phone_Number = input()
+
+print(first_Name[3:5])
+print(surname[1:5])
+"""
+
+#python operators
+#monthly grocery shop
+groceries = {"milo" : 13.45, "sugar" : 8.50, "nido" : 15.49, "gari" : 2.50, "croissant" : 1.50}
+
+max_quantity = 10
+
+print("Enter your name")
+name = input()
+ 
+print(f"Welcome {name}") 
+
+print("which items do you want to buy")
+customer_list = input()
+
+print("How many do you want to buy")
+quantity = int(input())
+ 
+bill = groceries[customer_list] * quantity
+
+if customer_list in groceries and quantity <= max_quantity:
+   print(f"Your bill is {bill}")
+elif customer_list in groceries and quantity > max_quantity:
+   print("Sorry we have few quantity in stock")
+else:
+   print("sorry kindly check the list and select accordingly")
+
+
+
+
+
+
+
 
